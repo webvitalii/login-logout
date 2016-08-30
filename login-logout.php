@@ -3,9 +3,9 @@
 Plugin Name: Login-Logout
 Plugin URI: http://wordpress.org/plugins/login-logout/
 Description: Show login or logout link. Show register or site-admin link. The replacement for the default Meta widget.
-Version: 3.6
+Version: 3.7
 Author: webvitaly
-Author URI: http://web-profile.com.ua/wordpress/plugins/
+Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
 */
 
@@ -95,7 +95,7 @@ class WP_Widget_Login_Logout extends WP_Widget {
 		if( $register_link ){ // register link
 			if ( ! is_user_logged_in() ) {
 				if ( get_option('users_can_register') ){
-					echo $split_char.$item_before.'"item_register">'.'<a href="'.site_url('wp-login.php?action=register', 'login').'">'.$register_text.'</a>'.$item_after;
+					echo $split_char.$item_before.'"item_register">' . '<a href="' . wp_registration_url() . '">' . $register_text . '</a>' . $item_after;
 				}
 			}
 		}
@@ -263,8 +263,8 @@ if ( ! function_exists( 'login_logout_plugin_meta' ) ) :
 	function login_logout_plugin_meta( $links, $file ) {
 		if ( $file == plugin_basename( __FILE__ ) ) {
 			$row_meta = array(
-				'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/login-logout/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Login-Logout', 'login-logout' ) . '</a>',
-				'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'login-logout' ) . '</a>',
+				'support' => '<a href="http://web-profile.net/wordpress/plugins/login-logout/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Login-Logout', 'login-logout' ) . '</a>',
+				'donate' => '<a href="http://web-profile.net/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'login-logout' ) . '</a>',
 				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'login-logout' ) . '</a>'
 			);
 			$links = array_merge( $links, $row_meta );
