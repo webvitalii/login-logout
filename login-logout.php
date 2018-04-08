@@ -3,13 +3,13 @@
 Plugin Name: Login-Logout
 Plugin URI: http://wordpress.org/plugins/login-logout/
 Description: Show login or logout link. Show register or site-admin link. The replacement for the default Meta widget.
-Version: 3.7
+Version: 3.8
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
 */
 
-define('LOGIN_LOGOUT_PLUGIN_VERSION', '3.5');
+define('LOGIN_LOGOUT_PLUGIN_VERSION', '3.8');
 
 class WP_Widget_Login_Logout extends WP_Widget {
 
@@ -248,7 +248,12 @@ class WP_Widget_Login_Logout extends WP_Widget {
 }
 
 
-add_action('widgets_init', create_function('', 'return register_widget("WP_Widget_Login_Logout");'));
+function login_logout_register_widgets() {
+	register_widget( 'WP_Widget_Login_Logout' );
+}
+
+
+add_action( 'widgets_init', 'login_logout_register_widgets' );
 
 
 if ( ! function_exists( 'login_logout_plugin_load_textdomain' ) ) :
@@ -263,9 +268,9 @@ if ( ! function_exists( 'login_logout_plugin_meta' ) ) :
 	function login_logout_plugin_meta( $links, $file ) {
 		if ( $file == plugin_basename( __FILE__ ) ) {
 			$row_meta = array(
-				'support' => '<a href="http://web-profile.net/wordpress/plugins/login-logout/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Login-Logout', 'login-logout' ) . '</a>',
-				'donate' => '<a href="http://web-profile.net/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'login-logout' ) . '</a>',
-				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'login-logout' ) . '</a>'
+				'support' => '<a href="http://web-profile.net/wordpress/plugins/login-logout/" target="_blank">' . __( 'Login-Logout', 'login-logout' ) . '</a>',
+				'donate' => '<a href="http://web-profile.net/donate/" target="_blank"> ' . __( 'Donate', 'login-logout' ) . '</a>',
+				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way">' . __( 'Silver Bullet Pro', 'login-logout' ) . '</a>'
 			);
 			$links = array_merge( $links, $row_meta );
 		}
