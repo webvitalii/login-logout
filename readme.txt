@@ -3,7 +3,7 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: login, logout, widget, meta, sidebar, admin, register
 Requires at least: 4.0
-Tested up to: 5.0
+Tested up to: 5.2
 Stable tag: 3.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -12,10 +12,10 @@ Widget with login, logout, admin and register links. Replacement of the default 
 
 == Description ==
 
-> **[Speedup WordPress](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")** |
-> **[Login-Logout](http://web-profile.net/wordpress/plugins/login-logout/ "Plugin page")** |
-> **[Donate](http://web-profile.net/donate/ "Support the development")** |
-> **[GitHub](https://github.com/webvitalii/login-logout "Fork")**
+* **[Anti-spam Pro](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block Spam in Comments")**
+* **[Login-Logout](http://web-profile.net/wordpress/plugins/login-logout/ "Plugin page")**
+* **[Donate](http://web-profile.net/donate/ "Support the development")**
+* **[GitHub](https://github.com/webvitalii/login-logout "Fork")**
 
 "Login-Logout" plugin adds widget with login or logout link. Also can be shown register or site-admin link. It is the replacement of the default Meta widget.
 
@@ -27,11 +27,6 @@ Widget with login, logout, admin and register links. Replacement of the default 
 * welcome text with link to user profile (if checkbox is active);
 * logout (after logout action user will return to previous page);
 * site admin (if checkbox is active);
-
-
-= Useful: =
-* **[Silver Bullet Pro - Speedup and protect WordPress in a smart way](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")**
-* **[Anti-spam Pro - Block spam in comments](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block spam in comments")**
 
 
 == Screenshots ==
