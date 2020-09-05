@@ -3,7 +3,7 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: login, logout, widget, meta, sidebar, admin, register
 Requires at least: 4.0
-Tested up to: 5.2
+Tested up to: 5.5
 Stable tag: 3.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -12,7 +12,7 @@ Widget with login, logout, admin and register links. Replacement of the default 
 
 == Description ==
 
-* **[Anti-spam Pro](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block Spam in Comments")**
+* **[Advanced iFrame Pro](https://1.envato.market/KdRNz "Advanced iFrame Pro")**
 * **[Login-Logout](http://web-profile.net/wordpress/plugins/login-logout/ "Plugin page")**
 * **[Donate](http://web-profile.net/donate/ "Support the development")**
 * **[GitHub](https://github.com/webvitalii/login-logout "Fork")**

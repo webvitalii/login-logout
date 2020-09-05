@@ -270,7 +270,7 @@ if ( ! function_exists( 'login_logout_plugin_meta' ) ) :
 			$row_meta = array(
 				'support' => '<a href="http://web-profile.net/wordpress/plugins/login-logout/" target="_blank">' . __( 'Login-Logout', 'login-logout' ) . '</a>',
 				'donate' => '<a href="http://web-profile.net/donate/" target="_blank"> ' . __( 'Donate', 'login-logout' ) . '</a>',
-				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way">' . __( 'Silver Bullet Pro', 'login-logout' ) . '</a>'
+				'pro' => '<a href="https://1.envato.market/KdRNz" target="_blank" title="Advanced iFrame Pro">' . __( 'Advanced iFrame Pro', 'login-logout' ) . '</a>'
 			);
 			$links = array_merge( $links, $row_meta );
 		}
